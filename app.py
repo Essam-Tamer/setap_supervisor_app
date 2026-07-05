@@ -8,6 +8,7 @@ import sys
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from socketserver import TCPServer
 from typing import Any
 from urllib.parse import parse_qs, urlencode, urlparse
 
@@ -16,6 +17,13 @@ BASE_DIR = Path(__file__).resolve().parent
 DB_PATH = BASE_DIR / "supervisor_match.sqlite3"
 HOST = os.environ.get("HOST", "127.0.0.1")
 PORT = int(os.environ.get("PORT", "8000"))
+
+
+class LocalThreadingHTTPServer(ThreadingHTTPServer):
+    def server_bind(self) -> None:
+        TCPServer.server_bind(self)
+        self.server_name = self.server_address[0]
+        self.server_port = self.server_address[1]
 
 
 def get_connection(db_path: Path | str = DB_PATH) -> sqlite3.Connection:
@@ -774,7 +782,7 @@ class SupervisorHandler(BaseHTTPRequestHandler):
 
 def run(host: str = HOST, port: int = PORT) -> None:
     ensure_database()
-    server = ThreadingHTTPServer((host, port), SupervisorHandler)
+    server = LocalThreadingHTTPServer((host, port), SupervisorHandler)
     print(f"Supervisor Match running at http://{host}:{port}")
     try:
         server.serve_forever()

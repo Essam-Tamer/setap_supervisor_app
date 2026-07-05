@@ -5,7 +5,7 @@
 - Date: 5 July 2026
 - Command: `python3 -m unittest discover -s tests -v`
 - Result: 11 tests run, 11 passed, 0 failed, 0 skipped.
-- Duration: 0.022 seconds on the development machine.
+- Duration: under 0.1 seconds on the development machine.
 
 Covered behaviours:
 
