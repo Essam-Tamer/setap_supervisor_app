@@ -1,0 +1,22 @@
+Test ID,Requirement ID,Feature/Unit,Test Type,Input Partition,Test Data,Expected Result,Evidence To Capture
+TP01,FR1,Staff profile create,Functional validation,Valid staff data,"Name, valid email, title, department, bio, office hours",Profile is created and visible in staff workspace,Screenshot plus unittest output
+TP02,FR1,Staff profile create,Functional validation,Invalid email,"bad-email",System rejects submission with email validation message,Screenshot or manual test note
+TP03,FR1,Staff profile update,Functional,Valid changed department,"Software Engineering to AI",Updated department appears on profile,Screenshot before/after
+TP04,FR1,Staff profile delete,Functional,Existing profile,Delete selected profile,Profile and related projects/areas are removed,Screenshot and database/test output
+TP05,FR2,Area of interest create,Functional,Valid area,"Cyber Security",Area appears on staff profile,Screenshot
+TP06,FR2,Area of interest create,Functional validation,Empty area,"",System rejects or does not add blank area,Manual test note
+TP07,FR2,Area of interest delete,Functional,Existing area,Remove selected area,Area no longer appears on profile,Screenshot
+TP08,FR3,Project idea create,Functional,Valid project,"Title, description, level, capacity 2, Open",Project appears on staff profile,Screenshot
+TP09,FR3,Project idea create,Boundary validation,Capacity below range,0,System rejects capacity below 1,Unittest output
+TP10,FR3,Project idea create,Boundary validation,Capacity above range,9,System rejects capacity above 8,Manual test note
+TP11,FR3,Project idea update,Functional,Valid status change,Open to Limited,Updated status appears on student profile page,Screenshot
+TP12,FR3,Project idea delete,Functional,Existing project,Delete selected project,Project no longer appears on staff profile,Screenshot
+TP13,FR4,Student browse,Functional,No search input,Blank query,All seeded staff profiles display,Screenshot
+TP14,FR4,Student search,Functional,Search by research area,Responsible AI,Matching staff profile appears,Unittest output and screenshot
+TP15,FR4,Student search,Functional,Search by project title,Traceable requirements,Matching supervisor appears,Unittest output
+TP16,NFR1,Usability,Inspection,Core workflows,Student browse and staff edit workflows,Navigation is understandable within demo,Demo recording
+TP17,NFR4,Performance,Manual timing,Normal dataset,Load browse page,Page loads within 2 seconds on local machine,Screen recording or note
+TP18,NFR3,Data quality,Automated,Duplicate email,Same email twice,System rejects duplicate email,Unittest output
+TP19,NFR5,Maintainability,Code review,Project structure,app.py plus tests/docs,Implementation has separated data functions and route handlers,Repository evidence
+TP20,NFR6,Compatibility,Manual,Desktop browser,Safari or Chrome,Pages render without layout breakage,Screenshot
+TP21,NFR2,Persistence,Automated,Database reconnection,Create staff then close and reopen SQLite connection,Created record remains available,Unittest output
