@@ -52,6 +52,8 @@ python3 -m unittest discover -s tests
 - `docs/test_results.md`: latest verified automated result and remaining manual evidence.
 - `docs/report_scaffold.md`: four-chapter structure mapped to the uploaded rubric.
 - `docs/interview_pack.md`: ethical, anonymised requirements-gathering template.
+- `docs/interview_response_template.md`: duplicate and complete once per participant.
+- `docs/demo_script.md`: timed 3-5 minute recording script and checklist.
 
 ## Coursework Mapping
 
