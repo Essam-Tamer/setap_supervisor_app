@@ -56,7 +56,7 @@ python3 -m unittest discover -s tests
 - `docs/interview_pack.md`: ethical, anonymised requirements-gathering template.
 - `docs/interview_response_template.md`: duplicate and complete once per participant.
 - `docs/demo_script.md`: timed 3-5 minute recording script and checklist.
-- `recordings/setap_demo_with_voiceover_checked.mp4`: checked demo recording.
+- `recordings/SETAP_Supervisor_Match_Demo.mp4`: checked demo recording.
 
 ## Coursework Mapping
 
