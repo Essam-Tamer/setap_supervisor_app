@@ -2,10 +2,10 @@
 
 ## Automated Run
 
-- Date: 5 July 2026
+- Date: 30 July 2026
 - Command: `python3 -m unittest discover -s tests -v`
 - Result: 11 tests run, 11 passed, 0 failed, 0 skipped.
-- Duration: under 0.1 seconds on the development machine.
+- Duration: 0.029 seconds on the development machine.
 
 Covered behaviours:
 
@@ -22,9 +22,12 @@ Covered behaviours:
 ## Test Plan Status
 
 `docs/test_plan.csv` contains 21 cases mapped to FR1-FR4 and NFR1-NFR6. The
-automated cases are implemented in `tests/test_app.py`. Manual browser cases must
-be executed on the final submission build and supported with the screenshots or
-recording named in the `Evidence To Capture` column.
+workbook version is `docs/SETAP_Test_Plan.xlsx` and follows the previous test
+plan format with method, signature, partition, inputs, expected output,
+description and valid or invalid columns. The automated cases are implemented in
+`tests/test_app.py`. Manual browser cases must be executed on the final
+submission build and supported with the screenshots or recording named in the
+evidence column.
 
 Do not mark a manual case as passed until it has actually been performed. Record
 the observed result, date, browser and evidence filename in the final report.

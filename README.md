@@ -49,6 +49,7 @@ python3 -m unittest discover -s tests
 
 - `docs/design.md`: architecture, data model, five detailed use cases and route map.
 - `docs/test_plan.csv`: 21 requirement-linked automated and manual test cases.
+- `docs/SETAP_Test_Plan.xlsx`: workbook version matching the previous test plan format.
 - `docs/test_results.md`: latest verified automated result and remaining manual evidence.
 - `docs/report_scaffold.md`: four-chapter structure mapped to the uploaded rubric.
 - `docs/interview_pack.md`: ethical, anonymised requirements-gathering template.
