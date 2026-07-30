@@ -48,6 +48,7 @@ python3 -m unittest discover -s tests
 ## Documentation
 
 - `docs/design.md`: architecture, data model, five detailed use cases and route map.
+- `docs/SETAP_Final_Report.docx`: polished final coursework report.
 - `docs/test_plan.csv`: 21 requirement-linked automated and manual test cases.
 - `docs/SETAP_Test_Plan.xlsx`: workbook version matching the previous test plan format.
 - `docs/test_results.md`: latest verified automated result and remaining manual evidence.
@@ -55,6 +56,7 @@ python3 -m unittest discover -s tests
 - `docs/interview_pack.md`: ethical, anonymised requirements-gathering template.
 - `docs/interview_response_template.md`: duplicate and complete once per participant.
 - `docs/demo_script.md`: timed 3-5 minute recording script and checklist.
+- `recordings/setap_demo_with_voiceover_checked.mp4`: checked demo recording.
 
 ## Coursework Mapping
 
